@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 PONG GAME</h1>
+        
+        <div class="scoreboard">
+            <div class="score-section">
+                <h2>Player</h2>
+                <p id="playerScore">0</p>
+            </div>
+            <div class="score-section">
+                <h2>Computer</h2>
+                <p id="computerScore">0</p>
+            </div>
+        </div>
+
+        <canvas id="pongCanvas" width="800" height="400"></canvas>
+
+        <div class="controls">
+            <h3>Controls:</h3>
+            <p>🖱️ <strong>Mouse</strong> - Move paddle up/down</p>
+            <p>⬆️ ⬇️ <strong>Arrow Keys</strong> - Alternative paddle control</p>
+            <p>⎵ <strong>Spacebar</strong> - Start/Stop game</p>
+        </div>
+
+        <div class="instructions">
+            <h3>How to Play:</h3>
+            <ul>
+                <li>Control your left paddle (green bar on the left)</li>
+                <li>Bounce the ball back at the computer</li>
+                <li>Score points when the computer misses the ball</li>
+                <li>First to 11 points wins!</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
